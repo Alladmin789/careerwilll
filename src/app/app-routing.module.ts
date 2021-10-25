@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'live-classes',
     loadChildren: () => import('./feature/live-classes/live-classes.module').then(m => m.LiveClassesModule),
+  },
+  {
+    path: 'classes',
+    loadChildren: () => import('./feature/classes/classes.module').then(m => m.ClassesModule),
   }
 ];
 
