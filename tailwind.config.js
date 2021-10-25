@@ -14,6 +14,9 @@ module.exports = {
         gray:{
           400: '#1d2b36',
         },
+        green:{
+          300: '#149ca8'
+        }
       },
     },
   },
