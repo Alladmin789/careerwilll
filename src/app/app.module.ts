@@ -11,6 +11,7 @@ import { SidebarListComponent } from './sidebar/sidebar-list/sidebar-list.compon
 import { HomeComponent } from './pages/home/home.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { LiveClassesComponent } from './pages/live-classes/live-classes.component';
+import { ClassesComponent } from './pages/classes/classes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LiveClassesComponent } from './pages/live-classes/live-classes.componen
     SidebarListComponent,
     HomeComponent,
     PrivacyComponent,
-    LiveClassesComponent
+    LiveClassesComponent,
+    ClassesComponent
   ],
   imports: [
     BrowserModule,
