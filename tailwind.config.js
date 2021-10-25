@@ -10,6 +10,11 @@ module.exports = {
       // fontFamily: {
       //   productSans: ['Montserrat', sans-serif],
       // },
+      colors:{
+        gray:{
+          400: '#1d2b36',
+        },
+      },
     },
   },
   variants: {
