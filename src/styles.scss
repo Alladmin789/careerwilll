@@ -1,13 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-/* ./your-css-folder/styles.css */
-img {
-    max-width: 100%;
-}
-html {
-    font-family: sans-serif;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-*{
-    box-sizing: border-box;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+html{
+    font-family: 'Montserrat', sans-serif;
 }
