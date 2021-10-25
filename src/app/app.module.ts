@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbComponent } from './header/breadcrumb/breadcrumb.component';
 import { SidebarListComponent } from './sidebar/sidebar-list/sidebar-list.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     SidebarComponent,
     BreadcrumbComponent,
     SidebarListComponent,
-    DashboardComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
