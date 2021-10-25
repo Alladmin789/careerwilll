@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbComponent } from './header/breadcrumb/breadcrumb.component';
 import { SidebarListComponent } from './sidebar/sidebar-list/sidebar-list.component';
 import { HomeComponent } from './pages/home/home.component';
+import { PrivacyComponent } from './pages/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './pages/home/home.component';
     SidebarComponent,
     BreadcrumbComponent,
     SidebarListComponent,
-    HomeComponent
+    HomeComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
