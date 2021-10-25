@@ -10,6 +10,7 @@ import { BreadcrumbComponent } from './header/breadcrumb/breadcrumb.component';
 import { SidebarListComponent } from './sidebar/sidebar-list/sidebar-list.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { LiveClassesComponent } from './pages/live-classes/live-classes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PrivacyComponent } from './pages/privacy/privacy.component';
     BreadcrumbComponent,
     SidebarListComponent,
     HomeComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    LiveClassesComponent
   ],
   imports: [
     BrowserModule,
