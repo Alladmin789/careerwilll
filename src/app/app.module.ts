@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './feature/login/login.component';
 import { BreadcrumbComponent } from './header/breadcrumb/breadcrumb.component';
+import { MyOrdersComponent } from './feature/my-orders/my-orders.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BreadcrumbComponent } from './header/breadcrumb/breadcrumb.component';
     HeaderComponent,
     SidebarComponent,
     LoginComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    MyOrdersComponent
   ],
   imports: [
     BrowserModule,
