@@ -13,6 +13,7 @@ import { MyOrdersComponent } from './feature/my-orders/my-orders.component';
 import { FaqsComponent } from './feature/faqs/faqs.component';
 import { ClassTimeTableComponent } from './modals/class-time-table/class-time-table.component';
 import { BuyCoursesComponent } from './modals/buy-courses/buy-courses.component';
+import { PrivacyComponent } from './feature/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BuyCoursesComponent } from './modals/buy-courses/buy-courses.component'
     MyOrdersComponent,
     FaqsComponent,
     ClassTimeTableComponent,
-    BuyCoursesComponent
+    BuyCoursesComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,

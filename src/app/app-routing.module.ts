@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PrivacyComponent } from './pages/privacy/privacy.component';
+
 
 const routes: Routes = [
   // {
@@ -20,10 +20,7 @@ const routes: Routes = [
     path: 'classes',
     loadChildren: () => import('./feature/classes/classes.module').then(m => m.ClassesModule),
   },
-  {
-    path: 'privacy',
-    component: PrivacyComponent
-  }
+  
 ];
 
 @NgModule({
