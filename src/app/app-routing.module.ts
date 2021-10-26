@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './feature/dashboard/home/home.component';
 import { LiveClassesComponent } from './feature/live-classes/live-classes.component';
-import { PrivacyComponent } from './pages/privacy/privacy.component';
+
 
 const routes: Routes = [
   // {
@@ -22,10 +22,7 @@ const routes: Routes = [
     path: 'classes',
     loadChildren: () => import('./feature/classes/classes.module').then(m => m.ClassesModule),
   },
-  {
-    path: 'privacy',
-    component: PrivacyComponent
-  }
+  
 ];
 
 @NgModule({
