@@ -1,7 +1,12 @@
-<app-header></app-header>
-<div class="flex">
-    <app-sidebar></app-sidebar>
-    <main class="w-[calc(100vw-265px)] h-[calc(100vh-80px)]">
-        <router-outlet></router-outlet>
-    </main>
+<div *ngIf="true">
+    <app-header></app-header>
+    <div class="flex">
+        <app-sidebar></app-sidebar>
+        <main class="w-[calc(100vw-265px)] h-[calc(100vh-80px)] p-7 bg-gray-50">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
+<div *ngIf="false">
+    <app-login></app-login>
 </div>

@@ -7,12 +7,16 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { RouterModule } from '@angular/router';
+import { LoginComponent } from './feature/login/login.component';
+import { BreadcrumbComponent } from './header/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
+    LoginComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
