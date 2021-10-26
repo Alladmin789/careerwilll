@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  isDropdownOpened = false
 
-  constructor() { }
+  constructor() {
+  }
+
 
   ngOnInit(): void {
+  }
+
+  openDropdown() {
+    this.isDropdownOpened = !this.isDropdownOpened
   }
 
 }

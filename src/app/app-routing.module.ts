@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FaqsComponent } from './feature/faqs/faqs.component';
+import { MyOrdersComponent } from './feature/my-orders/my-orders.component';
+import { PrivacyComponent } from './feature/privacy/privacy.component';
 
 
 const routes: Routes = [
@@ -17,9 +20,17 @@ const routes: Routes = [
     loadChildren: () => import('./feature/live-classes/live-classes.module').then(m => m.LiveClassesModule),
   },
   {
-    path: 'classes',
-    loadChildren: () => import('./feature/classes/classes.module').then(m => m.ClassesModule),
+    path: 'privacy',
+    component:PrivacyComponent
   },
+  {
+    path: 'faqs',
+    component:FaqsComponent
+  },
+  {
+    path: 'my-orders',
+    component:MyOrdersComponent
+  }
   
 ];
 
