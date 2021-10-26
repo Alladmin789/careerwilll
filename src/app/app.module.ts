@@ -14,6 +14,7 @@ import { ClassTimeTableComponent } from './modals/class-time-table/class-time-ta
 import { BuyCoursesComponent } from './modals/buy-courses/buy-courses.component';
 import { PrivacyComponent } from './feature/privacy/privacy.component';
 import { PlayerComponent } from './feature/player/player.component';
+import { NotificationsComponent } from './modals/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PlayerComponent } from './feature/player/player.component';
     ClassTimeTableComponent,
     BuyCoursesComponent,
     PrivacyComponent,
-    PlayerComponent
+    PlayerComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
