@@ -9,7 +9,7 @@ const routes: Routes = [
   //   loadChildren: () => import('./feature/login/login.module').then(m => m.LoginModule),
   // },
   {
-    path: 'dasboard',
+    path: '',
     loadChildren: () => import('./feature/dashboard/dashboard.module').then(m => m.DashboardModule),
   },
   {
