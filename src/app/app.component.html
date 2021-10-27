@@ -1,9 +1,14 @@
-<app-header></app-header>
-<div class="flex">
-    <app-sidebar></app-sidebar>
-    <main class="w-[calc(100vw-265px)] h-[calc(100vh-80px)] p-7 bg-gray-50">
+<ng-template [ngIf]="!isLogin">
+    <ng-container>
         <router-outlet></router-outlet>
-        <!-- <app-player></app-player> -->
-        <!-- <app-notifications></app-notifications> -->
-    </main>
-</div>
+    </ng-container>
+</ng-template>
+<ng-template [ngIf]="isLogin">
+    <app-header></app-header>
+    <div class="flex">
+        <app-sidebar></app-sidebar>
+        <main class="w-[calc(100vw-265px)] h-[calc(100vh-80px)] p-7 bg-gray-50">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</ng-template>

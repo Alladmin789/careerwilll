@@ -1,4 +1,4 @@
-<div class="grid place-items-center h-[100vh]">
+<div class="login-page-wrap grid place-items-center h-[100vh]">
     <div class="login-page w-full">
         <img class="login-logo" src="../../../assets/images/login-logo.png" alt="Logo">
         <div class="login-form-wrap">
@@ -16,7 +16,7 @@
                     <p><label for="password">Password</label>
                         <input type="password" placeholder="Enter Your Password">
                     </p>
-                    <button class="submit-btn">Log In</button>
+                    <button type="button" class="submit-btn" (click)="goToVotes('');">Log In</button>
                 </form>
             </section>
         </div>

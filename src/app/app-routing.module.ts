@@ -6,13 +6,13 @@ import { PrivacyComponent } from './feature/privacy/privacy.component';
 
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   pathMatch: 'full',
-  //   loadChildren: () => import('./feature/login/login.module').then(m => m.LoginModule),
-  // },
   {
     path: '',
+    pathMatch: 'full',
+    loadChildren: () => import('./feature/login/login.module').then(m => m.LoginModule),
+  },
+  {
+    path: 'dashboard',
     loadChildren: () => import('./feature/dashboard/dashboard.module').then(m => m.DashboardModule),
   },
   {
