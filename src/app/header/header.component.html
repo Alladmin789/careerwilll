@@ -1,21 +1,23 @@
 <header class="flex items-center h-[80px] bg-white px-4">
-    <div class="logo min-w-[240px] w-[240px]">
+    <div class="logo min-w-[204px] w-[204px]">
         <img src="../../assets/images/dash-logo.png" alt="">
     </div>
-    <div class="w-full pl-11">
+    <div class="w-full pl-7">
         <app-breadcrumb></app-breadcrumb>
     </div>
     <div>
-        <button class="flex items-center text-sm border-2 border-green-300 rounded-full font-medium py-1 px-5 mr-2">
+        <input type="checkbox" id="switch" />
+        <label for="switch">
             <i class="fas fa-trophy text-green-300 text-base mr-1.5"></i>
-            Competition
-        </button>
+            <span class="default">Competition</span>   
+            <span class="enabled">School</span>
+        </label>
     </div>
     <div class="relative">
         <button (click)="openDropdown()" [ngClass]="isDropdownOpened ? 'bg-green-300 text-white rounded-t-lg' : ''"
             class="flex items-center font-medium text-sm py-1 pb-3 mt-2 px-1.5">
             <i [ngClass]="isDropdownOpened ? 'text-white' : ''"
-             class="fas fa-user-circle text-green-300 text-lg mr-1.5"></i>
+                class="fas fa-user-circle text-green-300 text-lg mr-1.5"></i>
             Profile
         </button>
         <div *ngIf="isDropdownOpened"

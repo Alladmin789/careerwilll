@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-class-time-table',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassTimeTableComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public appService: AppService
+
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  closeBuyCoursesModal() {
+    this.appService.classTimeModal = false
   }
 
 }

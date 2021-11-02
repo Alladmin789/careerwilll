@@ -7,6 +7,8 @@ import { BehaviorSubject } from 'rxjs';
 export class AppService {
   // isLoggedIn:  boolean;
   loginEvent = new EventEmitter();
+  buyCourseModal = false;
+  classTimeModal = false;
   //new BehaviorSubject(false);
   constructor() {
     // this.loginEvent.next(false);

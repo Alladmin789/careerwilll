@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-faqs',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./faqs.component.scss']
 })
 export class FaqsComponent implements OnInit {
-
-  constructor() { }
+  collapsed = false;
+  constructor(private myElement: ElementRef) { }
 
   ngOnInit(): void {
   }
 
+  expand() {
+    console.log(this.myElement.nativeElement);
+  }
 }

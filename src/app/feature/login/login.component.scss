@@ -1,5 +1,5 @@
 .login-logo {
-    margin:0 auto 35px;
+    margin: 0 auto 35px;
     display: block;
     max-width: 200px;
 }
@@ -18,6 +18,7 @@
     .left {
         max-width: 50%;
         flex: 1;
+
         img {
             height: 100%;
             width: 100%;
@@ -26,7 +27,7 @@
     }
 
     .right {
-        padding:50px;
+        padding: 50px;
         flex: 1;
         max-width: 50%;
         background: #fff;
@@ -74,24 +75,21 @@
         }
 
         .submit-btn {
-            padding: 10px 20px;
-            background: #4CB050;
             margin-top: 25px;
-            color: #fff;
-            outline: none;
-            border: none;
-            border-radius: 3px;
         }
     }
 }
 
 .login-footer {
+    position: absolute;
     display: flex;
     justify-content: center;
     min-height: 180px;
     background: #139AAE;
-    margin-top: -80px;
     color: #fff;
     font-size: 10px;
     padding-top: 130px;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
 }
