@@ -8,3 +8,16 @@
     background-color: #555555;
     border-radius: 50px;
 }
+
+.fa-arrow-down{
+    display: none;
+}
+
+.test{
+    &+.hidden,.fa-arrow-down{
+        display: block;
+    }
+    .fa-arrow-right{
+        display: none;
+    }
+}

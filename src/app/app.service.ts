@@ -9,6 +9,7 @@ export class AppService {
   loginEvent = new EventEmitter();
   buyCourseModal = false;
   classTimeModal = false;
+  notificationModal = false;
   //new BehaviorSubject(false);
   constructor() {
     // this.loginEvent.next(false);

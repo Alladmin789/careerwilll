@@ -5,10 +5,14 @@
     <div class="w-full pl-7">
         <app-breadcrumb></app-breadcrumb>
     </div>
+    <div (click)='openNotificationModal()' class="notification min-w-[30px] h-[30px] w-[30px]  flex items-center justify-center p-1 bg-red-500 mr-3 rounded-full cursor-pointer">
+        <i class="fas fa-bell text-white"></i>
+    </div>
     <div>
         <input type="checkbox" id="switch" />
         <label for="switch">
-            <i class="fas fa-trophy text-green-300 text-base mr-1.5"></i>
+            <i class="fas fa-trophy text-base mr-2"></i>
+            <i class="fas fa-school text-base mr-2"></i>
             <span class="default">Competition</span>   
             <span class="enabled">School</span>
         </label>
@@ -43,3 +47,4 @@
         </div>
     </div>
 </header>
+<app-notifications *ngIf="this.appService.notificationModal"></app-notifications>

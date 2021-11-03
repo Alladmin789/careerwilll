@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isDropdownOpened = false
 
-  constructor() {
+  constructor(
+    public appService: AppService
+  ) {
   }
 
 
@@ -17,6 +20,10 @@ export class HeaderComponent implements OnInit {
 
   openDropdown() {
     this.isDropdownOpened = !this.isDropdownOpened
+  }
+
+  openNotificationModal() {
+    this.appService.notificationModal = true
   }
 
 }

@@ -4,10 +4,10 @@
 
 label {
     cursor: pointer;
-    width: 200px;
+    width: 180px;
     height: 34px;
     background: #fff;
-    border: 2px solid #149ca8;
+    border: 2px solid grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +15,13 @@ label {
     position: relative;
     padding-left: 34px;
     margin-right: 20px;
+    color: grey;
 
     .enabled {
+        display: none;
+    }
+
+    .fa-school {
         display: none;
     }
 }
@@ -28,15 +33,16 @@ label:after {
     left: -1px;
     width: 34px;
     height: 34px;
-    background: #149ca8;
+    background: grey;
     border-radius: 90px;
     transition: 0.3s;
 }
 
 #switch:checked+label {
     background: #149ca8;
-    padding: 0 34px 0 0;
+    padding: 0 0 0 0;
     color: #fff;
+    border: 1px solid #149ca8;
 
     .enabled {
         display: block;
@@ -45,10 +51,20 @@ label:after {
     .default {
         display: none;
     }
+
+    .fa-trophy {
+        display: none;
+    }
+
+    .fa-school {
+        display: block;
+    }
+
 }
 
 #switch:checked+label:after {
     left: calc(100% + 2px);
+    top:-1px;
     transform: translateX(-100%);
     background: #fff;
 }

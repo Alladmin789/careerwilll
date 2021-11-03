@@ -16,6 +16,7 @@ import { PrivacyComponent } from './feature/privacy/privacy.component';
 import { PlayerComponent } from './feature/player/player.component';
 import { NotificationsComponent } from './modals/notifications/notifications.component';
 import { ClassesComponent } from './feature/classes/classes.component';
+import { MyCoursesComponent } from './feature/my-courses/my-courses.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ClassesComponent } from './feature/classes/classes.component';
     BuyCoursesComponent,
     PrivacyComponent,
     PlayerComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    MyCoursesComponent
   ],
   imports: [
     BrowserModule,

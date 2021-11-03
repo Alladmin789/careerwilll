@@ -2,35 +2,38 @@
     <div class="w-full h-full bg-white rounded p-5 pr-3">
         <div class="vertical-scroll overflow-y-auto bg-white w-full max-h-full pr-5">
             <div class=" border-t border-b border-gray-200 cursor-pointer">
-                <div class="flex p-2" (click)="expand()">
-                    <div class="whitespace-nowrap font-bold">Q 1.&nbsp;</div>
-                    <div class="w-full font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ipsam.?</div>
-                    <div class=" whitespace-nowrap">
+                <div class="flex p-2 test" (click)="expand($event)">
+                    <div class="whitespace-nowrap font-bold pointer-events-none">Q 1.&nbsp;</div>
+                    <div class="w-full font-semibold pointer-events-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ipsam.?</div>
+                    <div class=" whitespace-nowrap pointer-events-none">
                         <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div class="pl-[45px] pr-8 pt-2 pb-3 content" *ngIf="collapsed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae autem aliquam dolorum ex vitae rerum consequuntur labore quae maxime, adipisci repellendus, nihil molestias quidem architecto vero, recusandae at a iste.</div>
-            </div>
-
-            <div class="border-t border-b border-black bg-[#effafc] cursor-pointer">
-                <div class="flex p-2"  (click)="expand()">
-                    <div class="whitespace-nowrap font-bold">Q 2.&nbsp;</div>
-                    <div class="w-full font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ipsam.?</div>
-                    <div class=" whitespace-nowrap">
                         <i class="fas fa-arrow-down"></i>
                     </div>
                 </div>
-                <div class="pl-[45px] pr-8 pt-2 pb-3" *ngIf="collapsed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae autem aliquam dolorum ex vitae rerum consequuntur labore quae maxime, adipisci repellendus, nihil molestias quidem architecto vero, recusandae at a iste.</div>
+                <div class="pl-[45px] pr-8 pt-2 pb-3 hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae autem aliquam dolorum ex vitae rerum consequuntur labore quae maxime, adipisci repellendus, nihil molestias quidem architecto vero, recusandae at a iste.</div>
             </div>
-            <div class="border-t border-b border-gray-200 cursor-pointer">
-                <div class="flex p-2"  (click)="expand()">
-                    <div class="whitespace-nowrap font-bold">Q 3.&nbsp;</div>
-                    <div class="w-full font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ipsam.?</div>
-                    <div class=" whitespace-nowrap">
+
+            <div class="border-t border-b border-black bg-[#effafc] cursor-pointer">
+                <div class="flex p-2"  (click)="expand($event)">
+                    <div class="whitespace-nowrap font-bold pointer-events-none">Q 2.&nbsp;</div>
+                    <div class="w-full font-semibold pointer-events-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ipsam.?</div>
+                    <div class=" whitespace-nowrap pointer-events-none">
                         <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-arrow-down hidden"></i>
                     </div>
                 </div>
-                <div class="pl-[45px] pr-8 pt-2 pb-3" *ngIf="collapsed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae autem aliquam dolorum ex vitae rerum consequuntur labore quae maxime, adipisci repellendus, nihil molestias quidem architecto vero, recusandae at a iste.</div>
+                <div class="pl-[45px] pr-8 pt-2 pb-3 hidden" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae autem aliquam dolorum ex vitae rerum consequuntur labore quae maxime, adipisci repellendus, nihil molestias quidem architecto vero, recusandae at a iste.</div>
+            </div>
+            <div class="border-t border-b border-gray-200 cursor-pointer">
+                <div class="flex p-2" (click)="expand($event)">
+                    <div class="whitespace-nowrap font-bold pointer-events-none">Q 3.&nbsp;</div>
+                    <div class="w-full font-semibold pointer-events-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ipsam.?</div>
+                    <div class=" whitespace-nowrap pointer-events-none">
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-arrow-down hidden"></i>
+                    </div>
+                </div>
+                <div class="pl-[45px] pr-8 pt-2 pb-3 hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae autem aliquam dolorum ex vitae rerum consequuntur labore quae maxime, adipisci repellendus, nihil molestias quidem architecto vero, recusandae at a iste.</div>
             </div>
         </div>    
     <div>
